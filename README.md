@@ -8,7 +8,7 @@
 
 [//]: # ([![License]&#40;https://img.shields.io/packagist/l/laravel/framework&#41;]&#40;https://packagist.org/packages/laravel/lumen-framework&#41;)
 
-Based on Lumen Framework, webxadmin is a xml based BREAD CRUD for database table eadministration.
+Based on Lumen Framework, webxadmin is a xml based BREAD CRUD for MYSQL database table administration.
 
 Declare your tables in storage / database.xml based on database.dtd 
 
