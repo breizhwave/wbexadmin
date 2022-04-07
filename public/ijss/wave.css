@@ -1,0 +1,44 @@
+.spinner-grow {
+    position: fixed;
+    z-index: 1031;
+    top: 30%;
+    left: 50%;
+
+}
+/*tooltip*/
+.tooltip-inner {
+    max-width: 750px;
+    /* If max-width does not work, try using width instead */
+    width: 750px;
+    text-align:left;
+}
+/*menu*/
+.navbar .navbar-nav .nav-item.active > a {margin:0 10px;}
+.navbar .navbar-nav .nav-item.active > a,
+.navbar .navbar-nav .nav-item:hover > a{background:#5c7cff; color:white}
+.navbar-expand-md .navbar-light .nav-item.active:after, .navbar-expand-md.navbar-light .nav-item.active:after{display:none}
+/*grid sort*/
+.waveSort {
+    display: inline-block;
+    vertical-align: middle;
+    color:black;
+
+}
+.waveSortArrow {display:inline; opacity:0.1;
+    cursor: pointer;}
+.waveSortArrow:hover , .waveSortArrow.active{opacity:1}
+
+
+/* grid filter */
+.filter label{display:none}
+
+/*color in grid*/
+.colorSquare{width:10px; height:30px;display:inline; float:left; margin-right:10px; border-radius:4px }
+/* color picker*/
+.clr-picker {z-index: 1500}
+.ss-single-selected .placeholder:not(.btn):not([class*=bg-]) {background-color: white !important}
+
+
+/* select 2 field hack */
+/* https://stackoverflow.com/questions/18487056/select2-doesnt-work-when-embedded-in-a-bootstrap-modal/19574076#19574076*/
+
