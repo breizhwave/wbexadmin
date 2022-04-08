@@ -63,6 +63,9 @@ this example creates a basic time tracking application with three tables
     </d_table>
 ```
 
+## Credit
+
+* Bootstrap interface : [tabler.io](https://github.com/tabler/tabler) 
 
 ## License
 
