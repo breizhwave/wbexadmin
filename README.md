@@ -62,10 +62,23 @@ this example creates a basic time tracking application with three tables
         <d_field name="body" type="textarea"></d_field>
     </d_table>
 ```
+## TODO
+
+* pagination
+* export
+* tree field  : multi level filtering (currently only two levels)
+* doc : add image in readme
 
 ## Credit
 
 * Bootstrap interface : [tabler.io](https://github.com/tabler/tabler) 
+* daterangepicker
+* colorpicker
+
+## Alternatives
+
+* Laravel Nova and BackPack Manager
+* https://github.com/nafiesl/SimpleCrudGenerator
 
 ## License
 
