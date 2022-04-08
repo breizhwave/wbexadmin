@@ -69,6 +69,10 @@ this example creates a basic time tracking application with three tables
 * tree field  : multi level filtering (currently only two levels)
 * doc : add image in readme
 
+## Screenshot
+
+![Time tracking app](https://raw.githubusercontent.com/breizhwave/webxadmin/master/public/ijss/i/screenshot1-timetracking.jpg)
+
 ## Credit
 
 * Bootstrap interface : [tabler.io](https://github.com/tabler/tabler) 
