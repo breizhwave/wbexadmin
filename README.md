@@ -17,18 +17,51 @@ and the controller does the rest :
 * basic data table with filtering
 * modal form generation with field types : input, wysiwyg (based on summer note), select (based on table relation ship)
 
-## Official Documentation
+## Installation
 
-Documentation for the webxadmin RAD tool is in progress
+* clone the repository
+* configure database access in .env
+* create your tables in  storage / database.xml
 
-## Contributing
+## Basic Example
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+this example creates a basic time tracking application with three tables
+ * Notes
+   * tab based form (2 tabs defined by d_tab )
+   * aggregate sum function for counting hours
+   * hierachic filtering for categories and customer related tables
+ * Category  / Customer : hierarchic tree structure
+ * color coding for categories
 
-## Security Vulnerabilities
+```
+  <d_table name="note">
+        <d_tabs>
+            <d_tab title="Infos"></d_tab>
+            <d_tab title="Taxonomy"></d_tab>
 
-If you discover a security vulnerability within webxadmin, please send an e-mail to Erwan at wave.bzh. All security vulnerabilities will be promptly addressed.
+        </d_tabs>
+        <d_aggregate name="hours" function="sum"></d_aggregate>
+        <d_field name="date_creation"  subtype="date" order="desc"  tab="Taxonomy"></d_field>
+        <d_field name="date_modif" hide="both" subtype="date" ></d_field>
+        <d_field name="title" tooltip="body"  tab="Infos"></d_field>
+        <d_field name="body" type="textarea" hide="list"  tab="Infos"></d_field>
+        <d_field name="category" type="select" relation="category"  tab="Taxonomy"></d_field>
+        <d_field name="customer" type="select" relation="customer"  tab="Taxonomy" subtype="tree"></d_field>
+        <d_field name="hours" type="number"   tab="Infos" ></d_field>
+    </d_table>
+       <d_table name="category">
+        <d_field name="title"></d_field>
+        <d_field name="body" type="textarea"></d_field>
+        <d_field name="color" subtype="color"></d_field>
+    </d_table>
+    <d_table name="customer">
+        <d_field name="parent_id" type="select" relation="customer"  ></d_field>
 
+        <d_field name="title"></d_field>
+        <d_field name="body" type="textarea"></d_field>
+    </d_table>
+```
+ 
 ## License
 
 The webxadmin framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
