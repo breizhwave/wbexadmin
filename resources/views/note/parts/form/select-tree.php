@@ -36,7 +36,7 @@ echo options($arrFields,$field);
 
     <script>
         $( document ).ready(function() {
-            console.log("select parent <?=ucfirst($field["name"]) . ucfirst($fieldPrefix)?>")
+            //console.log("select parent <?//=ucfirst($field["name"]) . ucfirst($fieldPrefix)?>//")
             $("#waveInput<?=ucfirst($field["name"]) . ucfirst($fieldPrefix)?>").select2ToTree();
             $( document ).on( "waveOpenModal", function() {
                     console.log("waveopenmodal");
