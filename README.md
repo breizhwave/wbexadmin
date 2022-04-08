@@ -22,7 +22,8 @@ and the controller does the BREAD / CRUD scaffolding :
 
 * clone the repository
 * configure database access in .env
-* create your tables in  storage / database.xml
+* create your tables in sql (with primary key autoincrement named "id")
+* declare your tables in  storage / database.xml
 
 ## Basic Example
 
@@ -68,8 +69,11 @@ this example creates a basic time tracking application with three tables
 * export
 * tree field  : multi level filtering (currently only two levels)
 * doc : add image in readme
+* generic id primary key field
 
 ## Screenshot
+
+### example of a time tracking application
 
 ![Time tracking app](https://raw.githubusercontent.com/breizhwave/webxadmin/master/public/ijss/i/screenshot1-timetracking.jpg)
 
