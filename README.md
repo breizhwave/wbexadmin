@@ -8,14 +8,15 @@
 
 [//]: # ([![License]&#40;https://img.shields.io/packagist/l/laravel/framework&#41;]&#40;https://packagist.org/packages/laravel/lumen-framework&#41;)
 
-Based on Lumen Framework, webxadmin is a xml based BREAD CRUD for MYSQL database table administration.
+Based on Lumen Framework, webxadmin is a xml based BREAD (browse, read, edit, add, delete) or CRUD ( Create-Read-Update-Delete) for MYSQL database table administration.
 
 Declare your tables in storage / database.xml based on database.dtd 
 
-and the controller does the rest :
+and the controller does the BREAD / CRUD scaffolding :
 
 * basic data table with filtering
 * modal form generation with field types : input, wysiwyg (based on summer note), select (based on table relation ship)
+
 
 ## Installation
 
@@ -61,7 +62,8 @@ this example creates a basic time tracking application with three tables
         <d_field name="body" type="textarea"></d_field>
     </d_table>
 ```
- 
+
+
 ## License
 
 The webxadmin framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
