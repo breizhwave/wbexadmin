@@ -7,14 +7,14 @@
             <d_tab title="Classement"></d_tab>
 
         </d_tabs>
-        <d_aggregate name="duree" function="sum"></d_aggregate>
+        <d_aggregate name="time_spent" title='Total Time Spent' function="sum"></d_aggregate>
         <d_field name="date_creation"  subtype="date" order="desc"  tab="Classement"></d_field>
         <d_field name="date_modif" hide="both" subtype="date" ></d_field>
         <d_field name="title" tooltip="body"  tab="Infos"></d_field>
         <d_field name="body" type="textarea" hide="list"  tab="Infos"></d_field>
         <d_field name="category" type="select" relation="category"  tab="Classement"></d_field>
         <d_field name="customer" type="select" relation="customer"  tab="Classement" subtype="tree"></d_field>
-        <d_field name="duree" type="number"   tab="Infos" title="Time Spent"></d_field>
+        <d_field name="time_spent" type="number"   tab="Infos" title="Time Spent"></d_field>
     </d_table>
     <d_table name="compta">
         <d_tabs>

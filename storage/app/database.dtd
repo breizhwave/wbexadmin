@@ -10,6 +10,7 @@
 <!ELEMENT d_aggregate EMPTY>
 <!ATTLIST d_aggregate  name CDATA #REQUIRED>
 <!ATTLIST d_aggregate  function (avg|count|max|min|sum) #IMPLIED>
+<!ATTLIST d_aggregate  title CDATA #IMPLIED>
 
 <!ELEMENT d_field EMPTY>
 <!ATTLIST d_field  tab CDATA #IMPLIED>
