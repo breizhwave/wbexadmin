@@ -74,6 +74,8 @@ this example creates a basic time tracking application with three tables
 * Bootstrap interface : [tabler.io](https://github.com/tabler/tabler) 
 * Date Range Filter: [Date Range Picker](https://www.daterangepicker.com/)
 * [Colorpicker](https://github.com/mdbassit/Coloris) 
+* Wysiwyg editor : [SummerNote](https://summernote.org/)
+* Hierarchical Tree filter : [select2Tree](https://github.com/clivezhg/select2-to-tree) , depends on [select2](https://github.com/select2/select2)
 
 ## Alternatives
 
