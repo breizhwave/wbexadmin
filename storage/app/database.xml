@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE d_schema SYSTEM "database.dtd">
+<d_schema>
+    <d_table name="note">
+        <d_tabs>
+            <d_tab title="Infos"></d_tab>
+            <d_tab title="Classement"></d_tab>
+
+        </d_tabs>
+        <d_aggregate name="duree" function="sum"></d_aggregate>
+        <d_field name="date_creation"  subtype="date" order="desc"  tab="Classement"></d_field>
+        <d_field name="date_modif" hide="both" subtype="date" ></d_field>
+        <d_field name="title" tooltip="body"  tab="Infos"></d_field>
+        <d_field name="body" type="textarea" hide="list"  tab="Infos"></d_field>
+        <d_field name="category" type="select" relation="category"  tab="Classement"></d_field>
+        <d_field name="customer" type="select" relation="customer"  tab="Classement" subtype="tree"></d_field>
+        <d_field name="duree" type="number"   tab="Infos" title="Time Spent"></d_field>
+    </d_table>
+    <d_table name="compta">
+        <d_tabs>
+            <d_tab title="Infos"></d_tab>
+            <d_tab title="Classement"></d_tab>
+
+        </d_tabs>
+        <d_aggregate name="montant_ht" function="sum"></d_aggregate>
+        <d_field name="date_creation"  subtype="date" order="desc" tab="Classement"></d_field>
+        <d_field name="category" type="select" relation="category" tab="Classement"></d_field>
+        <d_field name="customer" type="select" relation="customer" tab="Classement" subtype="tree"></d_field>
+        <d_field name="fournisseur" type="select" relation="fournisseur" tab="Classement" subtype="tree"></d_field>
+
+        <d_field name="title" tooltip="body" tab="Infos"></d_field>
+        <d_field name="nofacture"   tab="Infos"></d_field>
+        <d_field name="body" type="textarea" hide="list"  tab="Infos"></d_field>
+
+        <d_field name="montant_ht" type="number"  tab="Infos"></d_field>
+        <d_field name="montant_ttc" type="number"  tab="Infos"></d_field>
+    </d_table>
+    <d_table name="category">
+        <d_field name="title"></d_field>
+        <d_field name="body" type="textarea"></d_field>
+        <d_field name="color" subtype="color"></d_field>
+    </d_table>
+    <d_table name="customer">
+        <d_field name="parent_id" type="select" relation="customer"  ></d_field>
+
+        <d_field name="title"></d_field>
+        <d_field name="body" type="textarea"></d_field>
+    </d_table>
+    <d_table name="fournisseur">
+        <d_field name="parent_id" type="select" relation="fournisseur"  ></d_field>
+
+        <d_field name="title"></d_field>
+        <d_field name="body" type="textarea"></d_field>
+    </d_table>
+</d_schema>

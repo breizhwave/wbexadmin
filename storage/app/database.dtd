@@ -1,0 +1,24 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT d_schema (d_table)+>
+<!ELEMENT d_table ( d_tabs*, d_aggregate*,d_field+)>
+<!ATTLIST d_table  name  CDATA #REQUIRED   >
+<!ELEMENT d_tabs (d_tab+) >
+<!ELEMENT d_tab EMPTY>
+<!ATTLIST d_tab  name CDATA #IMPLIED>
+<!ATTLIST d_tab  title CDATA #IMPLIED>
+<!ELEMENT d_aggregate EMPTY>
+<!ATTLIST d_aggregate  name CDATA #REQUIRED>
+<!ATTLIST d_aggregate  function (avg|count|max|min|sum) #IMPLIED>
+
+<!ELEMENT d_field EMPTY>
+<!ATTLIST d_field  tab CDATA #IMPLIED>
+<!ATTLIST d_field  title CDATA #IMPLIED>
+<!ATTLIST d_field  order (asc|desc) #IMPLIED>
+<!ATTLIST d_field  name CDATA #REQUIRED>
+<!ATTLIST d_field  tooltip CDATA #IMPLIED>
+<!ATTLIST d_field  type (input|textarea|select|number) "input">
+<!ATTLIST d_field  subtype (date|color|tree) #IMPLIED>
+<!ATTLIST d_field  relation CDATA #IMPLIED>
+<!ATTLIST d_field  hide   (form|list|both) #IMPLIED  >
+<!ATTLIST d_field  required   (duplicate) #IMPLIED  >
