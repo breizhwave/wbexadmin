@@ -72,8 +72,8 @@ this example creates a basic time tracking application with three tables
 ## Credit
 
 * Bootstrap interface : [tabler.io](https://github.com/tabler/tabler) 
-* daterangepicker
-* colorpicker
+* Date Range Filter: [Date Range Picker](https://www.daterangepicker.com/)
+* [Colorpicker](https://github.com/mdbassit/Coloris) 
 
 ## Alternatives
 
