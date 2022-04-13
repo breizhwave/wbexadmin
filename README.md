@@ -72,6 +72,7 @@ this example creates a basic time tracking application with three tables
 * tree field  : multi level filtering (currently only two levels)
 * doc : add image in readme
 * generic id primary key field
+* translation of delete message
 
 ## Screenshot
 
