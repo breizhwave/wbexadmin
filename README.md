@@ -25,6 +25,7 @@ and the controller does the BREAD / CRUD scaffolding :
 * get dependencies with `composer update`
 * create your tables in sql (with primary key autoincrement named "id")
 * declare your tables in  storage / database.xml
+* browse your application url with table name to access webxadmin (no index page yet ..)
 
 ## Basic Example
 
