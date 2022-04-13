@@ -22,6 +22,7 @@ and the controller does the BREAD / CRUD scaffolding :
 
 * clone the repository
 * configure database access in .env
+* get dependencies with `composer update`
 * create your tables in sql (with primary key autoincrement named "id")
 * declare your tables in  storage / database.xml
 
