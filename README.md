@@ -89,8 +89,10 @@ this example creates a basic time tracking application with three tables
 ## Alternatives
 
 * Laravel Nova and BackPack Manager
-* https://github.com/nafiesl/SimpleCrudGenerator
+* https://lean-admin.dev/
+* https://filamentphp.com/
 * Blue Print : https://github.com/laravel-shift/blueprint
+* https://github.com/nafiesl/SimpleCrudGenerator
 
 ## License
 
