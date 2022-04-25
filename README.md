@@ -8,11 +8,9 @@
 
 [//]: # ([![License]&#40;https://img.shields.io/packagist/l/laravel/framework&#41;]&#40;https://packagist.org/packages/laravel/lumen-framework&#41;)
 
-Based on Lumen Framework, webxadmin is a xml based BREAD (browse, read, edit, add, delete) or CRUD ( Create-Read-Update-Delete) for MYSQL database table administration.
+Based on Laravel's little brother, Lumen Framework, webxadmin is a xml based BREAD (browse, read, edit, add, delete) or CRUD ( Create-Read-Update-Delete) for MYSQL database table administration. I know this is quite unconventionnal for Laravel which relies mailny on data MODELS : the main objective of webxadmin is to keep the main data schema configuration in one single file that you can edit quickly. 
 
-Declare your tables in storage / database.xml based on database.dtd 
-
-and the controller does the BREAD / CRUD scaffolding :
+With webxadmin, you setup a whole adminstration panel prototype in .. say 10 minutes.  All you have to do is look at the `storage_path('app') . '/database.xml'` and declare your tables and fields  based on `database.dtd` definition. All the work is performed by the single WaveController controller with a few views that still include raw PHP code to perform the BREAD / CRUD scaffolding :
 
 * basic data table with filtering
 * modal form generation with field types : input, wysiwyg (based on summer note), select (based on table relation ship)
@@ -92,6 +90,7 @@ this example creates a basic time tracking application with three tables
 
 * Laravel Nova and BackPack Manager
 * https://github.com/nafiesl/SimpleCrudGenerator
+* Blue Print : https://github.com/laravel-shift/blueprint
 
 ## License
 
